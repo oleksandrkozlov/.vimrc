@@ -64,6 +64,13 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v(exe|so|dll|o|marks|gcno|pyc|a|out|make|internal|includecache|Makefile|CMakeCache.txt|pc|CMakeDoxyfile.in)$',
   \ }
 
+function! Formatonsave()
+    let l:formatdiff="all"
+    py3f /usr/local/share/clang/clang-format.py
+endfunction
+
+autocmd BufWritePre *.h,*.cc,*.cpp,*.hpp call Formatonsave()
+
 set encoding=utf-8
 set fileencoding=utf-8
 set autoindent
