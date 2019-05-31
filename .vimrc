@@ -109,7 +109,6 @@ set listchars=eol:¬,tab:▸\ ,trail:·,nbsp:⎵
 set modelines=1
 set noautochdir
 set noerrorbells
-set noesckeys
 set nospell
 set nostartofline
 set nowrap
