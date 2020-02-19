@@ -22,6 +22,7 @@ filetype plugin indent on
 
 let mapleader = "\<Space>"
 syntax on
+let g:dracula_italic = 0
 color dracula
 au CursorHold * checktime
 
