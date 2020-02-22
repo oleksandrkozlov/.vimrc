@@ -15,6 +15,7 @@ Plugin 'dracula/vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 Plugin 'autozimu/LanguageClient-neovim'
+Plugin 'oleksandrkozlov/a.vim'
 
 call vundle#end()
 
