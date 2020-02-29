@@ -63,7 +63,7 @@ let g:gitgutter_max_signs = 500
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](googletest-download|googletest-src|googletest-build|CMakeFiles|bin|lib)$',
-  \ 'file': '\v(exe|so|dll|o|marks|gcno|pyc|a|out|make|internal|includecache|Makefile|CMakeCache.txt|pc|CMakeDoxyfile.in)$',
+  \ 'file': '\v(exe|so|dll|o|marks|gcno|pyc|a|out|make|internal|includecache|Makefile|CMakeCache.txt|pc|CMakeDoxyfile.in|html|js)$',
   \ }
 
 function! Formatonsave()
