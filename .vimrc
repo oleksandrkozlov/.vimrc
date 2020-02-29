@@ -45,11 +45,12 @@ let g:airline#extensions#ycm#enabled =1
 let g:airline#extensions#ycm#error_symbol = '✖ '
 let g:airline#extensions#ycm#warning_symbol = '⚠ '
 
+let g:ycm_use_clangd=1
 let g:ycm_clangd_uses_ycmd_caching=0
 let g:ycm_clangd_binary_path = exepath("clangd")
-let g:ycm_server_python_interpreter="/usr/bin/python2"
 let g:ycm_warning_symbol = '⚠'
 let g:ycm_error_symbol = '✖'
+let g:ycm_clangd_args = ['-header-insertion-decorators=0', '-header-insertion=never', '-background-index', '-completion-style=bundled', '-suggest-missing-includes=1', '-j=4']
 
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
