@@ -14,7 +14,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'dracula/vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
-Plugin 'autozimu/LanguageClient-neovim'
 Plugin 'oleksandrkozlov/a.vim'
 
 call vundle#end()
@@ -24,14 +23,11 @@ filetype plugin indent on
 let mapleader = "\<Space>"
 syntax on
 let g:dracula_italic = 0
+let g:dracula_colorterm = 0
+color dracula
+
 color dracula
 au CursorHold * checktime
-
-let g:LanguageClient_serverCommands = {
-  \ 'cpp': ['clangd', '-background-index'],
-  \ }
-
-let g:LanguageClient_diagnosticsEnable=0
 
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
@@ -40,7 +36,7 @@ let g:airline#extensions#tabline#show_tabs=1
 let g:airline#extensions#tabline#fnamemod=':p:t'
 let g:airline#extensions#tabline#fnametruncate=0
 let g:airline_powerline_fonts=1
-let g:airline_theme='dark'
+let g:airline_theme='dracula'
 let g:airline#extensions#ycm#enabled =1
 let g:airline#extensions#ycm#error_symbol = '✖ '
 let g:airline#extensions#ycm#warning_symbol = '⚠ '
@@ -93,7 +89,6 @@ set t_Co=256
 set updatetime=100
 set backspace=indent,eol,start
 set clipboard=unnamedplus
-set colorcolumn=100
 set completeopt=longest,menuone
 set cursorline
 set diffopt+=vertical
@@ -114,8 +109,6 @@ set noerrorbells
 set nospell
 set nostartofline
 set nowrap
-set number
-set relativenumber
 set ruler
 set scrolloff=8 sidescrolloff=15 sidescroll=1
 set shortmess=I
